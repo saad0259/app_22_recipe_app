@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
+import './widgets/categories_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,17 +15,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Expense Manager',
+      title: 'Recipe App',
       theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
+          primarySwatch: Colors.pink,
           accentColor: Colors.amber,
-          fontFamily: 'Quicksand',
+          fontFamily: 'Raleway',
+          canvasColor: Color(0xffffeeee),
           textTheme: ThemeData.light().textTheme.copyWith(
+            bodyText1: TextStyle(color: Color(0xff112222)),
+            bodyText2: TextStyle(color: Color(0xff112222)),
             headline6: const TextStyle(
-              fontFamily: 'OpenSans',
+              fontFamily: 'RobotoCondensed',
               fontWeight: FontWeight.bold,
-              fontSize: 16,
-              color: Colors.black,
+              fontSize: 20,
+              //color: Colors.black,
             ),
             // button: TextStyle(
             //   color: Colors.yellow,
@@ -33,7 +37,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: AppBarTheme(
               textTheme: ThemeData.light().textTheme.copyWith(
                   headline6: const TextStyle(
-                    fontFamily: 'OpenSans',
+                    fontFamily: 'RobotoCondensed',
                     fontSize: 18,
                   )))),
       home: MyHomePage(),
@@ -78,6 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
     return Scaffold(
         appBar: appBar,
+        body: CategoriesScreen(),
     );
   }
 }
