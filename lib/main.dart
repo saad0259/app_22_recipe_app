@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 import './widgets/categories_screen.dart';
+import './widgets/category_meals_screen.dart';
 
 void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -22,69 +24,72 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Raleway',
           canvasColor: Color(0xffffeeee),
           textTheme: ThemeData.light().textTheme.copyWith(
-            bodyText1: TextStyle(color: Color(0xff112222)),
-            bodyText2: TextStyle(color: Color(0xff112222)),
-            headline6: const TextStyle(
-              fontFamily: 'RobotoCondensed',
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              //color: Colors.black,
-            ),
-            // button: TextStyle(
-            //   color: Colors.yellow,
-            // )
-          ),
+                bodyText1: TextStyle(color: Color(0xff112222)),
+                bodyText2: TextStyle(color: Color(0xff112222)),
+                headline6: const TextStyle(
+                  fontFamily: 'RobotoCondensed',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  //color: Colors.black,
+                ),
+                // button: TextStyle(
+                //   color: Colors.yellow,
+                // )
+              ),
           appBarTheme: AppBarTheme(
               textTheme: ThemeData.light().textTheme.copyWith(
-                  headline6: const TextStyle(
+                      headline6: const TextStyle(
                     fontFamily: 'RobotoCondensed',
                     fontSize: 18,
                   )))),
-      home: MyHomePage(),
+      home: CategoriesScreen(),
+      routes: {
+        // '/category-meals': (ctx) => CategoryMealsScreen(),
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
+      },
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    final dynamic appBar = Platform.isIOS
-        ? CupertinoNavigationBar(
-      middle: const Text("Recipe App"),
-      leading: const Icon(CupertinoIcons.settings_solid),
-      trailing: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          GestureDetector(
-            child: const Icon(CupertinoIcons.add),
-            onTap: () => (){},
-          )
-        ],
-      ),
-    )
-        : AppBar(
-      title: const Text("Recipe App"),
-      leading: Icon(Icons.menu),
-      centerTitle: true,
-      actions: [
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.add),
-        )
-      ],
-    );
-    return Scaffold(
-        appBar: appBar,
-        body: CategoriesScreen(),
-    );
-  }
-}
-
-
+// class MyHomePage extends StatefulWidget {
+//   const MyHomePage({Key? key}) : super(key: key);
+//
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
+//
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     final dynamic appBar = Platform.isIOS
+//         ? CupertinoNavigationBar(
+//       middle: const Text("Recipe App"),
+//       leading: const Icon(CupertinoIcons.settings_solid),
+//       trailing: Row(
+//         mainAxisSize: MainAxisSize.min,
+//         children: [
+//           GestureDetector(
+//             child: const Icon(CupertinoIcons.add),
+//             onTap: () => (){},
+//           )
+//         ],
+//       ),
+//     )
+//         : AppBar(
+//       title: const Text("Recipe App"),
+//       leading: Icon(Icons.menu),
+//       centerTitle: true,
+//       actions: [
+//         IconButton(
+//           onPressed: () {},
+//           icon: const Icon(Icons.add),
+//         )
+//       ],
+//     );
+//     return Scaffold(
+//         appBar: appBar,
+//         body: CategoriesScreen(),
+//     );
+//   }
+// }
+//
