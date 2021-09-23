@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               textTheme: ThemeData.light().textTheme.copyWith(
                       headline6: const TextStyle(
                     fontFamily: 'RobotoCondensed',
-                    fontSize: 18,
+                    fontSize: 24,
                   )))),
       home: TabsScreen(),
       routes: {
