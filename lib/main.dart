@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import './widgets/categories_screen.dart';
 import './widgets/category_meals_screen.dart';
 import './widgets/meal_detail_screen.dart';
+import './widgets/tabs_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -41,18 +42,19 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'RobotoCondensed',
                     fontSize: 18,
                   )))),
-      home: CategoriesScreen(),
+      home: TabsScreen(),
       routes: {
+        // '/' : (ctx) => TabsScreen(),
         // '/category-meals': (ctx) => CategoryMealsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
-      onGenerateRoute: (settings){
+      onGenerateRoute: (settings) {
         print(settings.arguments);
-        return MaterialPageRoute(builder: (ctx)=>CategoryMealsScreen());
+        return MaterialPageRoute(builder: (ctx) => TabsScreen());
       },
-      onUnknownRoute: (settings){
-        return MaterialPageRoute(builder: (ctx)=>CategoryMealsScreen());
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(builder: (ctx) => TabsScreen());
       },
     );
   }
