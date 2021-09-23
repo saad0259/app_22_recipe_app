@@ -17,7 +17,7 @@ class CategoryMealsScreen extends StatelessWidget {
     final catTitle = routeArgs['title'];
     final catId = routeArgs['id'];
 
-    final CategoryMeals = DUMMY_MEALS
+    final categoryMeals = DUMMY_MEALS
         .where((element) => element.categories.contains(catId))
         .toList();
 
@@ -28,14 +28,15 @@ class CategoryMealsScreen extends StatelessWidget {
       body: ListView.builder(
         itemBuilder: (ctx, index) {
           return MealItem(
-            title: CategoryMeals[index].title,
-            imgUrl: CategoryMeals[index].imageUrl,
-            duration: CategoryMeals[index].duration,
-            complexity: CategoryMeals[index].complexity,
-            affordability: CategoryMeals[index].affordability,
+            id: categoryMeals[index].id,
+            title: categoryMeals[index].title,
+            imgUrl: categoryMeals[index].imageUrl,
+            duration: categoryMeals[index].duration,
+            complexity: categoryMeals[index].complexity,
+            affordability: categoryMeals[index].affordability,
           );
         },
-        itemCount: CategoryMeals.length,
+        itemCount: categoryMeals.length,
       ),
     );
   }

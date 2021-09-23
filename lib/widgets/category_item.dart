@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../models/dummy_data.dart';
 import 'package:app_22_recipe_app/widgets/category_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
@@ -18,7 +17,7 @@ class CategoryItem extends StatelessWidget {
     // Navigator.of(context).push(MaterialPageRoute(builder: (_){
     //   return CategoryMealsScreen(catID: id,catTitle: title);
     // }),);
-    Navigator.of(context).pushNamed('/category-meals', arguments: {
+    Navigator.of(context).pushNamed(CategoryMealsScreen.routeName, arguments: {
       'id': id,
       'title': title,
     });
