@@ -1,8 +1,24 @@
-# app_22_recipe_app
+# Recipe App 
 
-A new Flutter project.
+This is a Recipe app. Main purpose of this app is to demonstrate multiple Flutter & Dart Concepts. Some of the concepts are as follows:
 
-## Getting Started
+### Concepts:
+- Theming
+- Navigation Bar
+- Flutter Grid
+- Passing data via Constructors
+- Using named routes and passing the data along 
+- onGenerateRoute & onUnknownRoute
+- Bottom TabBar
+- Custom Drawer
+- Replacing Pages (Instead of Pushing)
+- Popping Pages & Passing Data Back
+- Filter Switches and Filtering Logic
+- Mark as Favorite
+
+*
+# Screenshots
+
 
 This project is a starting point for a Flutter application.
 
