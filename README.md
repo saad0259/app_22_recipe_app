@@ -20,11 +20,11 @@ This is a Recipe app. Main purpose of this app is to demonstrate multiple Flutte
 ## Screenshots
 
 
-<img src="screenshots/main_screen.jpg" width="200" height="400">
-<img src="screenshots/meal_list.jpg" width="200" height="400">
-<img src="screenshots/favorites_screen.jpg" width="200" height="400">
-<img src="screenshots/custom_drawer.jpg" width="200" height="400">
-<img src="screenshots/filter_switch.jpg" width="200" height="400">
+<img src="screenshots/main_screen.jpg" width="200" height="400">&nbsp;
+<img src="screenshots/meal_list.jpg" width="200" height="400">&nbsp;
+<img src="screenshots/favorites_screen.jpg" width="200" height="400">&nbsp;
+<img src="screenshots/custom_drawer.jpg" width="200" height="400">&nbsp;
+<img src="screenshots/filter_switch.jpg" width="200" height="400">&nbsp;
 
 
 This project is a starting point for a Flutter application.
