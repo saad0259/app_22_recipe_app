@@ -17,7 +17,9 @@ This is a Recipe app. Main purpose of this app is to demonstrate multiple Flutte
 - Mark as Favorite
 
 *
-# Screenshots
+## Screenshots
+screenshots\Screenshot_20211109_121316_com.example.app_22_recipe_app.jpg
+screenshots\InShot_20211109_133809279.mp4
 
 
 This project is a starting point for a Flutter application.
