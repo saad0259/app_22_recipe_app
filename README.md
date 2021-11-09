@@ -18,9 +18,8 @@ This is a Recipe app. Main purpose of this app is to demonstrate multiple Flutte
 
 *
 ## Screenshots
-screenshots\Screenshot_20211109_121316_com.example.app_22_recipe_app.jpg
-screenshots\InShot_20211109_133809279.mp4
-
+github.com/saad0259/app_22_recipe_app/screenshots/Screenshot_20211109_121316_com.example.app_22_recipe_app.jpg
+github.com/app_22_recipe_app/screenshots/InShot_20211109_133809279.mp4
 
 This project is a starting point for a Flutter application.
 
