@@ -19,7 +19,10 @@ This is a Recipe app. Main purpose of this app is to demonstrate multiple Flutte
 *
 ## Screenshots
 
-![alt text](https://github.com/saad0259/app_22_recipe_app/blob/master/screenshots/recipe_screen.mp4)
+#### Main Scree #### Meal List #### Favorite Screen
+![alt text](https://github.com/saad0259/app_22_recipe_app/blob/master/screenshots/main_screen.jpg)
+![alt text](https://github.com/saad0259/app_22_recipe_app/blob/master/screenshots/meal_list.jpg)
+![alt text](https://github.com/saad0259/app_22_recipe_app/blob/master/screenshots/favorites_screen.jpg)
 
 
 This project is a starting point for a Flutter application.
