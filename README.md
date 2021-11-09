@@ -28,13 +28,26 @@ This is a Recipe app. Main purpose of this app is to demonstrate multiple Flutte
 <img src="screenshots/filter_switch.jpg" width="200" height="400">&nbsp;
 
 
-This project is a starting point for a Flutter application.
+## How to run
+Run following commands after cloning this repository:
+```sh
+$ flutter clean
+$ flutter pub get
+$ flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+# Third party libraries used
+-None
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Bugs
+- Did not face any bugs. Let me know if you found any.
+
+
+
+# Contribution
+1. Fork it
+2. Create your feature branch (git checkout -b new_branch)
+3. Commit your changes (git commit -m 'New feature')
+4. Push to the branch (git push origin new_branch)
+5. Create new Pull Request
