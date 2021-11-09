@@ -16,7 +16,7 @@ This is a Recipe app. Main purpose of this app is to demonstrate multiple Flutte
 - Filter Switches and Filtering Logic
 - Mark as Favorite
 
-*
+
 ## Screenshots
 
 
